@@ -16,7 +16,7 @@ const caseCards = [
     ),
   },
   {
-    title: "Mark Johnson — A&M Towing",
+    title: "A&M Towing",
     desc: "Liberar un auto requería gestionar documentos en persona, generando filas y carga operacional. Implementamos un sistema de carga y envío de documentos en línea previo al retiro.",
     result: "Menos tiempo de espera, menos carga para el equipo.",
     icon: (
