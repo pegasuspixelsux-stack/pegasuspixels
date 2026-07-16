@@ -54,7 +54,7 @@ export default function DealiOSPage() {
           <h1 className="m-0 mb-4 text-[38px] font-bold leading-[1.12] tracking-[-0.02em] text-white md:text-[52px]">
             DealiOS
             <br />
-            <span className="text-[22px] font-semibold leading-[1.15] text-[#9AA0AB] md:text-[28px]">
+            <span className="text-[22px] font-semibold leading-[1] text-[#9AA0AB] md:text-[28px]">
               La plataforma para publicar vehículos y gestionar el proceso
               de ventas de tu concesionaria.
             </span>
