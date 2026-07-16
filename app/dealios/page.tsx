@@ -53,11 +53,6 @@ export default function DealiOSPage() {
         <Reveal direction="left" className="min-w-[320px] flex-1 basis-[460px]">
           <h1 className="m-0 mb-4 text-[38px] font-bold leading-[1.12] tracking-[-0.02em] text-white md:text-[52px]">
             DealiOS
-            <br />
-            <span className="text-[22px] font-semibold leading-[0.95] text-[#9AA0AB] md:text-[28px]">
-              La plataforma para publicar vehículos y gestionar el proceso
-              de ventas de tu concesionaria.
-            </span>
           </h1>
           <p className="m-0 mb-7 text-sm font-semibold text-[#2563EB]">
             La plataforma para publicar vehículos y gestionar el proceso de
