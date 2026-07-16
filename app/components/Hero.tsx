@@ -49,7 +49,7 @@ export default function Hero() {
   return (
     <Reveal direction="left" className="px-5 pt-[72px] pb-24">
       <div className="relative w-full overflow-hidden rounded-[16px] border border-white/10">
-        <div className="relative h-[70vh] w-full overflow-hidden bg-white/[0.04] md:h-auto md:aspect-[21/9]">
+        <div className="relative h-[75vh] w-full overflow-hidden bg-white/[0.04] md:h-auto md:aspect-[21/9]">
           {slides.map((slide, i) => (
             <div
               key={i}
