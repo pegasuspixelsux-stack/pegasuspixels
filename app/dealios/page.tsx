@@ -4,8 +4,6 @@ import CasosReales from "../components/CasosReales";
 import FAQSection from "../components/FAQSection";
 import Footer from "../components/Footer";
 import GaleriaSection from "../components/GaleriaSection";
-import HospitalitySection from "../components/HospitalitySection";
-import InmobiliariasSection from "../components/InmobiliariasSection";
 import NuestroEnfoque from "../components/NuestroEnfoque";
 import OpportunitiesSection from "../components/OpportunitiesSection";
 import PrimeraImpresion from "../components/PrimeraImpresion";
@@ -159,11 +157,7 @@ export default function DealiOSPage() {
         </Reveal>
       </section>
 
-      <InmobiliariasSection />
-
       <AutomotorasSection />
-
-      <HospitalitySection />
 
       <ArquitecturaSection />
 
