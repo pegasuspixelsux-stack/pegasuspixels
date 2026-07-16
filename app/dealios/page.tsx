@@ -54,14 +54,14 @@ export default function DealiOSPage() {
           <h1 className="m-0 mb-4 text-[38px] font-bold leading-[1.12] tracking-[-0.02em] text-white md:text-[52px]">
             DealiOS
             <br />
-            <span className="text-[22px] font-semibold leading-[1] text-[#9AA0AB] md:text-[28px]">
+            <span className="text-[22px] font-semibold leading-[0.95] text-[#9AA0AB] md:text-[28px]">
               La plataforma para publicar vehículos y gestionar el proceso
               de ventas de tu concesionaria.
             </span>
           </h1>
-          <p className="m-0 mb-7 text-sm font-semibold uppercase tracking-[0.06em] text-[#2563EB]">
-            Diseño Web • Desarrollo de Aplicaciones • Soluciones Digitales •
-            Asesoramiento y Soporte Tecnológico
+          <p className="m-0 mb-7 text-sm font-semibold text-[#2563EB]">
+            La plataforma para publicar vehículos y gestionar el proceso de
+            ventas de tu concesionaria.
           </p>
           <p className="m-0 mb-9 max-w-[480px] text-lg leading-[1.6] text-[#9AA0AB]">
             Diseñamos sitios web modernos, sistemas de gestión de clientes y
