@@ -156,9 +156,9 @@ export default function DealiOSPage() {
         </Reveal>
       </section>
 
-      <AutomotorasSection />
+      <AutomotorasSection bg="transparent" />
 
-      <GaleriaSection />
+      <GaleriaSection bg="transparent" />
 
       <PrimeraImpresion bg="#FF0000" />
 
