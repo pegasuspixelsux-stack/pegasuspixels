@@ -57,7 +57,7 @@ export default function Hero() {
   return (
     <Reveal direction="left" className="px-5 pt-[72px] pb-24">
       <div className="relative w-full overflow-hidden rounded-[16px] border border-white/10">
-        <div className="relative h-[80vh] w-full overflow-hidden bg-white/[0.04] md:h-auto md:aspect-[21/9]">
+        <div className="relative h-[70vh] w-full overflow-hidden bg-white/[0.04] md:h-auto md:aspect-[21/9]">
           {slides.map((slide, i) => (
             <div
               key={i}
@@ -88,7 +88,7 @@ export default function Hero() {
               <div className="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-[#2563EB]">
                 Punta del Este
               </div>
-              <h3 className="m-0 text-[30px] leading-[0.95] text-white md:text-[64px]">
+              <h3 className="m-0 text-[40px] leading-[0.95] text-white md:text-[64px]">
                 <span className="font-[family-name:var(--font-inter-display)] font-normal tracking-[-0.8px]">
                   Soluciones
                   <br />
