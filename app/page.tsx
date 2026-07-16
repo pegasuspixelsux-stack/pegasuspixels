@@ -44,7 +44,7 @@ export default function Home() {
             href="#assessment"
             className="inline-block rounded-xl bg-[#2563EB] px-9 py-[18px] text-lg font-semibold text-white no-underline shadow-[0_12px_28px_-8px_rgba(37,99,235,0.5)] transition-colors hover:bg-[#1D4ED8]"
           >
-            Iniciá tu Evaluación Digital Gratuita
+            Agendá tu Consulta
           </a>
         </Reveal>
       </section>
