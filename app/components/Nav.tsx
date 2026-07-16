@@ -23,7 +23,7 @@ export default function Nav() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-[#141E33]/40 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 md:px-12">
         <Link href="/" className="text-lg font-bold tracking-[-0.01em] text-white no-underline">
-          Pegasus Pixels
+          Pegasus <span className="text-[#2563EB]">Pixels</span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
