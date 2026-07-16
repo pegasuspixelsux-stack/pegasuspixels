@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useState } from "react";
 
 const navItems: {
   label: string;
@@ -18,11 +21,29 @@ const navItems: {
   { label: "Precios", href: "#" },
 ];
 
+function MenuIcon({ open }: { open: boolean }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth={2}>
+      {open ? (
+        <path d="M6 6l12 12M18 6 6 18" strokeLinecap="round" strokeLinejoin="round" />
+      ) : (
+        <path d="M4 7h16M4 12h16M4 17h16" strokeLinecap="round" strokeLinejoin="round" />
+      )}
+    </svg>
+  );
+}
+
 export default function Nav() {
+  const [open, setOpen] = useState(false);
+
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-[#141E33]/40 backdrop-blur-md">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-6 py-4 md:px-12">
-        <Link href="/" className="text-lg font-bold tracking-[-0.01em] text-white no-underline">
+        <Link
+          href="/"
+          onClick={() => setOpen(false)}
+          className="text-lg font-bold tracking-[-0.01em] text-white no-underline"
+        >
           Pegasus <span className="text-[#2563EB]">Pixels</span>
         </Link>
 
@@ -73,10 +94,78 @@ export default function Nav() {
 
         <a
           href="#assessment"
-          className="inline-block rounded-lg bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8]"
+          className="hidden rounded-lg bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8] md:inline-block"
         >
           Agendá tu Evaluación
         </a>
+
+        <button
+          type="button"
+          onClick={() => setOpen((v) => !v)}
+          aria-label={open ? "Cerrar menú" : "Abrir menú"}
+          aria-expanded={open}
+          className="text-white md:hidden"
+        >
+          <MenuIcon open={open} />
+        </button>
+      </div>
+
+      <div
+        className={`overflow-hidden border-t border-white/5 bg-[#0B1120] transition-all duration-300 md:hidden ${
+          open ? "max-h-[480px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <nav className="flex flex-col gap-1 px-6 py-4">
+          {navItems.map((item) => {
+            if (item.dropdown) {
+              return (
+                <div key={item.label} className="flex flex-col">
+                  <span className="px-3 py-2 text-sm font-semibold uppercase tracking-[0.05em] text-[#9AA0AB]">
+                    {item.label}
+                  </span>
+                  {item.dropdown.map((sub) => (
+                    <Link
+                      key={sub.label}
+                      href={sub.href}
+                      onClick={() => setOpen(false)}
+                      className="rounded-lg px-3 py-2.5 text-[15px] text-[#9AA0AB] no-underline transition-colors hover:bg-white/5 hover:text-white"
+                    >
+                      {sub.label}
+                    </Link>
+                  ))}
+                </div>
+              );
+            }
+
+            return item.href!.startsWith("/") ? (
+              <Link
+                key={item.label}
+                href={item.href!}
+                onClick={() => setOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-[15px] text-[#9AA0AB] no-underline transition-colors hover:bg-white/5 hover:text-white"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.label}
+                href={item.href}
+                onClick={() => setOpen(false)}
+                className="rounded-lg px-3 py-2.5 text-[15px] text-[#9AA0AB] no-underline transition-colors hover:bg-white/5 hover:text-white"
+              >
+                {item.label}
+              </a>
+            );
+          })}
+
+          <a
+            href="#assessment"
+            onClick={() => setOpen(false)}
+            className="mt-3 inline-block rounded-lg bg-[#2563EB] px-5 py-2.5 text-center text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8]"
+          >
+            Agendá tu Evaluación
+          </a>
+        </nav>
       </div>
     </header>
   );
