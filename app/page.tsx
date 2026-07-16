@@ -40,12 +40,14 @@ export default function Home() {
             Descubrí en qué está perdiendo oportunidades tu negocio y recibí
             recomendaciones prácticas para mejorar tu desempeño en línea.
           </p>
-          <a
-            href="#assessment"
-            className="inline-block rounded-xl bg-[#2563EB] px-9 py-[18px] text-lg font-semibold text-white no-underline shadow-[0_12px_28px_-8px_rgba(37,99,235,0.5)] transition-colors hover:bg-[#1D4ED8]"
-          >
-            Agendá tu Consulta
-          </a>
+          <div className="flex justify-center">
+            <a href="#assessment" className="button no-underline">
+              Agendá tu Consulta
+              <svg viewBox="0 0 24 24" fill="none" className="icon" stroke="currentColor" strokeWidth={2}>
+                <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </a>
+          </div>
         </Reveal>
       </section>
 

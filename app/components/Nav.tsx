@@ -93,12 +93,14 @@ export default function Nav() {
           })}
         </nav>
 
-        <a
-          href="#assessment"
-          className="hidden rounded-lg bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8] md:inline-block"
-        >
-          Agendá tu Evaluación
-        </a>
+        <div className="hidden md:flex">
+          <a href="#assessment" className="button no-underline">
+            Agendá tu Evaluación
+            <svg viewBox="0 0 24 24" fill="none" className="icon" stroke="currentColor" strokeWidth={2}>
+              <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </a>
+        </div>
 
         <button
           type="button"
