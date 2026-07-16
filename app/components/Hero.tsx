@@ -114,7 +114,7 @@ export default function Hero() {
 
               <a
                 href="#assessment"
-                className="inline-block rounded-lg bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8]"
+                className="hidden rounded-lg bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8] md:inline-block"
               >
                 Agendá tu Evaluación
               </a>
