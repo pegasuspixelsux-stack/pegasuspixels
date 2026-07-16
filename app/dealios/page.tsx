@@ -1,4 +1,3 @@
-import ArquitecturaSection from "../components/ArquitecturaSection";
 import AutomotorasSection from "../components/AutomotorasSection";
 import CasosReales from "../components/CasosReales";
 import FAQSection from "../components/FAQSection";
@@ -158,8 +157,6 @@ export default function DealiOSPage() {
       </section>
 
       <AutomotorasSection />
-
-      <ArquitecturaSection />
 
       <GaleriaSection />
 
