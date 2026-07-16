@@ -51,7 +51,7 @@ const footerNav = ["Características", "Soluciones", "Precios"];
 
 export default function DealiOSPage() {
   return (
-    <div className="w-full overflow-x-hidden bg-[#7A1F1F] font-sans text-white antialiased">
+    <div className="w-full overflow-x-hidden bg-[#FF0000] font-sans text-white antialiased">
       {/* SECTION 1 — HERO */}
       <section className="mx-auto flex max-w-[1280px] flex-wrap items-center gap-16 px-6 pb-24 pt-24 md:px-12 md:pt-[120px] md:pb-[100px]">
         <Reveal direction="left" className="min-w-[320px] flex-1 basis-[460px]">
@@ -148,7 +148,7 @@ export default function DealiOSPage() {
           </div>
 
           {/* Mobile website mockup */}
-          <div className="absolute bottom-[-18px] right-[4%] h-[220px] w-[108px] rounded-[22px] border border-white/10 bg-[#7A1F1F] p-2 shadow-[0_20px_40px_-14px_rgba(0,0,0,0.5)]">
+          <div className="absolute bottom-[-18px] right-[4%] h-[220px] w-[108px] rounded-[22px] border border-white/10 bg-[#FF0000] p-2 shadow-[0_20px_40px_-14px_rgba(0,0,0,0.5)]">
             <div className="flex h-full w-full flex-col gap-2 rounded-2xl bg-white px-2.5 py-3.5">
               <div className="mx-auto mb-1 h-1.5 w-8 rounded-[3px] bg-[#2563EB]" />
               <div className="h-2 w-[80%] rounded-[3px] bg-[#111827]" />
@@ -170,24 +170,24 @@ export default function DealiOSPage() {
 
       <GaleriaSection />
 
-      <PrimeraImpresion bg="#7A1F1F" />
+      <PrimeraImpresion bg="#FF0000" />
 
       <Reveal direction="left">
-        <OpportunitiesSection bg="#7A1F1F" />
+        <OpportunitiesSection bg="#FF0000" />
       </Reveal>
 
-      <ProblemSection bg="#7A1F1F" />
+      <ProblemSection bg="#FF0000" />
 
-      <CasosReales bg="#7A1F1F" />
+      <CasosReales bg="#FF0000" />
 
-      <NuestroEnfoque bg="#7A1F1F" />
+      <NuestroEnfoque bg="#FF0000" />
 
-      <PuntaDelEste bg="#7A1F1F" />
+      <PuntaDelEste bg="#FF0000" />
 
-      <TuNegocio bg="#7A1F1F" />
+      <TuNegocio bg="#FF0000" />
 
       {/* SECTION 3 — FEATURES */}
-      <section className="bg-[#7A1F1F] px-6 py-24 md:px-12">
+      <section className="bg-[#FF0000] px-6 py-24 md:px-12">
         <Reveal direction="right" className="mx-auto max-w-[1200px]">
           <h2 className="m-0 mb-12 max-w-[640px] text-[28px] font-bold tracking-[-0.01em] text-white md:text-[34px]">
             Todo lo que tu negocio necesita para crecer en línea.
@@ -208,7 +208,7 @@ export default function DealiOSPage() {
       </section>
 
       {/* SECTION 4 — INDUSTRIES */}
-      <section className="bg-[#7A1F1F] px-6 py-24 md:px-12">
+      <section className="bg-[#FF0000] px-6 py-24 md:px-12">
         <Reveal direction="left" className="mx-auto max-w-[1200px]">
           <h2 className="m-0 mb-12 text-[28px] font-bold tracking-[-0.01em] text-white md:text-[34px]">
             Soluciones Para Tu Industria
@@ -231,7 +231,7 @@ export default function DealiOSPage() {
       </section>
 
       {/* SECTION 5 — PRODUCT TABS */}
-      <section className="bg-[#7A1F1F] px-6 py-24 md:px-12">
+      <section className="bg-[#FF0000] px-6 py-24 md:px-12">
         <Reveal direction="right" className="mx-auto max-w-[1200px]">
           <h2 className="m-0 mb-10 text-[28px] font-bold tracking-[-0.01em] text-white md:text-[34px]">
             Mirá Cómo Funcionan Nuestros Sistemas
@@ -241,7 +241,7 @@ export default function DealiOSPage() {
       </section>
 
       {/* SECTION 6 — PRICING */}
-      <section className="bg-[#7A1F1F] px-6 py-24 md:px-12">
+      <section className="bg-[#FF0000] px-6 py-24 md:px-12">
         <Reveal direction="left" className="mx-auto max-w-[1100px] text-center">
           <h2 className="m-0 mb-11 text-[28px] font-bold tracking-[-0.01em] text-white md:text-[34px]">
             Paquete de Lanzamiento Digital
@@ -288,10 +288,10 @@ export default function DealiOSPage() {
         </Reveal>
       </section>
 
-      <FAQSection bg="#7A1F1F" />
+      <FAQSection bg="#FF0000" />
 
       {/* SECTION 7 — CTA */}
-      <section id="assessment" className="bg-[#7A1F1F] px-6 py-[120px] text-center md:px-12">
+      <section id="assessment" className="bg-[#FF0000] px-6 py-[120px] text-center md:px-12">
         <Reveal direction="right" className="mx-auto max-w-[640px]">
           <h2 className="m-0 mb-5.5 text-[32px] font-bold tracking-[-0.01em] text-white md:text-[38px]">
             Analicemos tu presencia digital.
@@ -310,7 +310,7 @@ export default function DealiOSPage() {
       </section>
 
       {/* FOOTER */}
-      <footer className="border-t border-white/10 bg-[#7A1F1F] px-6 py-14 md:px-12">
+      <footer className="border-t border-white/10 bg-[#FF0000] px-6 py-14 md:px-12">
         <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-6">
           <div className="text-lg font-bold tracking-[-0.01em] text-white">Pegasus Pixels</div>
           <nav className="flex flex-wrap gap-7">
