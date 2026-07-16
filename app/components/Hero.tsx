@@ -112,13 +112,6 @@ export default function Hero() {
                 {slides[active].text}
               </p>
 
-              <a
-                href="#assessment"
-                className="hidden rounded-lg bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8] md:inline-block"
-              >
-                Agendá tu Evaluación
-              </a>
-
               <div className="flex flex-wrap gap-2 md:justify-end">
                 {slides.map((slide, i) => (
                   <button
