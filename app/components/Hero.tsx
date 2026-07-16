@@ -36,14 +36,6 @@ const slides = [
   },
 ];
 
-function ArrowRightIcon() {
-  return (
-    <svg viewBox="0 0 24 24" fill="none" className="h-4 w-4" stroke="currentColor" strokeWidth={2}>
-      <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
-    </svg>
-  );
-}
-
 export default function Hero() {
   const [active, setActive] = useState(0);
 
@@ -122,12 +114,9 @@ export default function Hero() {
 
               <a
                 href="#assessment"
-                className="group relative inline-flex items-center gap-2 px-1 text-lg font-medium text-white no-underline"
+                className="inline-block rounded-lg bg-[#2563EB] px-5 py-2.5 text-sm font-semibold text-white no-underline transition-colors hover:bg-[#1D4ED8]"
               >
-                Ver Servicios
-                <ArrowRightIcon />
-                <span className="absolute bottom-0 left-0 h-px w-full bg-white/30" />
-                <span className="absolute bottom-0 left-0 h-px w-full origin-left -translate-x-full bg-white transition-transform duration-700 ease-in-out group-hover:translate-x-0" />
+                Agendá tu Evaluación
               </a>
 
               <div className="flex flex-wrap gap-2 md:justify-end">
