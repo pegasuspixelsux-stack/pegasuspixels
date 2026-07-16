@@ -2,7 +2,7 @@ import Reveal from "./Reveal";
 
 const caseCards = [
   {
-    title: "Jim Coleman Honda — MD",
+    title: "Jim Coleman Honda",
     desc: "Tenían inventario de usados sin mover. El problema no era el producto — era que los clientes no llegaban al vendedor a tiempo. Implementamos un sistema de alcance con carruseles en Facebook conectados directamente al equipo de ventas.",
     result: "Las ventas ese mes se dispararon.",
     icon: (
