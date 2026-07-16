@@ -65,7 +65,7 @@ export default function DealiOSPage() {
           </p>
           <a
             href="#assessment"
-            className="inline-block rounded-xl bg-[#2563EB] px-7 py-4 text-[17px] font-semibold text-white no-underline shadow-[0_8px_20px_-6px_rgba(37,99,235,0.45)] transition-all hover:bg-[#1D4ED8] hover:shadow-[0_10px_24px_-6px_rgba(37,99,235,0.55)]"
+            className="inline-block rounded-xl bg-[#2563EB] px-7 py-4 text-[17px] font-semibold text-white no-underline shadow-[0_8px_20px_-6px_rgba(37,99,235,0.45)] transition-all hover:bg-[#1D4ED8] hover:shadow-[0_10px_24px_-6px_rgba(37,99,235,0.55)] md:hidden"
           >
             Obtené tu Evaluación Digital Gratuita
           </a>
