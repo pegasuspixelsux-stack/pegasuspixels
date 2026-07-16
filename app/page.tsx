@@ -2,14 +2,13 @@ import autotrader from "./images/autotrader.png";
 import CasosReales from "./components/CasosReales";
 import ComoTrabajamos from "./components/ComoTrabajamos";
 import FAQSection from "./components/FAQSection";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import LaSolucion from "./components/LaSolucion";
 import PorQuePegasusPixels from "./components/PorQuePegasusPixels";
 import PrimeraImpresion from "./components/PrimeraImpresion";
 import PuntaDelEste from "./components/PuntaDelEste";
 import Reveal from "./components/Reveal";
-
-const footerNav = ["Características", "Soluciones", "Precios"];
 
 export default function Home() {
   return (
@@ -51,37 +50,7 @@ export default function Home() {
         </Reveal>
       </section>
 
-      {/* FOOTER */}
-      <footer className="border-t border-white/10 bg-[#141E33] px-6 py-14 md:px-12">
-        <div className="mx-auto flex max-w-[1200px] flex-wrap items-center justify-between gap-6">
-          <div className="text-lg font-bold tracking-[-0.01em] text-white">Pegasus Pixels</div>
-          <nav className="flex flex-wrap gap-7">
-            {footerNav.map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="text-[15px] text-[#9AA0AB] no-underline transition-colors hover:text-[#2563EB]"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-          <div className="flex flex-wrap gap-5 text-sm text-[#9AA0AB]">
-            <a
-              href="mailto:hello@pegasuspixels.com"
-              className="text-[#9AA0AB] no-underline transition-colors hover:text-[#2563EB]"
-            >
-              hello@pegasuspixels.com
-            </a>
-            <a href="#" className="text-[#9AA0AB] no-underline transition-colors hover:text-[#2563EB]">
-              WhatsApp
-            </a>
-          </div>
-        </div>
-        <div className="mx-auto mt-8 max-w-[1200px] text-[13px] text-[#6B7280]">
-          © 2026 Pegasus Pixels. Todos los derechos reservados.
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
