@@ -88,7 +88,7 @@ export default function Hero() {
               <div className="mb-4 text-sm font-bold uppercase tracking-[0.08em] text-[#2563EB]">
                 Punta del Este
               </div>
-              <h3 className="m-0 text-[40px] leading-[0.95] text-white md:text-[64px]">
+              <h3 className="m-0 text-[30px] leading-[0.95] text-white md:text-[64px]">
                 <span className="font-[family-name:var(--font-inter-display)] font-normal tracking-[-0.8px]">
                   Soluciones
                   <br />
