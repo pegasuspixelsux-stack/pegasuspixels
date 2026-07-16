@@ -19,6 +19,7 @@ const navItems: {
   },
   { label: "Industrias", href: "/industriaspage" },
   { label: "Precios", href: "#" },
+  { label: "Contacto", href: "/contacto" },
 ];
 
 function MenuIcon({ open }: { open: boolean }) {
